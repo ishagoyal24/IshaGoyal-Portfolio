@@ -1,3 +1,397 @@
+
+githu me folder kese uplod kru? ek folder k ander
+
+muje pura folder uplod krna hai ek sath zip krn jruri to ni?
+
+
+and agr files ek ek krk ya select all krk hongi uplod to yeh btao folder kese bnta hai isme
+Nahi! 😄 GitHub par pura folder upload karne ke liye ZIP banana bilkul zaroori nahi hai. Tum directly apna complete folder upload kar sakte ho.
+
+Main dono methods batata hoon.
+
+Method 1: Pura folder ek saath upload karna (without ZIP)
+Create repository in GitHub
+GitHub open karo.
+
+Apni repository open karo.
+
+Add file par click karo.
+
+Upload files select karo.
+
+Apne computer se folder ke andar ki saari files select karo.
+
+Unhe drag and drop karke GitHub ke upload area mein daal do.
+
+Neeche Commit changes par click karo.
+
+Important: GitHub web interface mein directly folder select karne ka option generally nahi hota. Folder ke andar ki files select karni hoti hain.
+
+Method 2: Folder ke andar folder banana
+How do I create a folder in a GitHub repository? - Stack Overflow
+Maan lo tumhe GitHub par ye structure banana hai:
+
+MyProject/
+   frontend/
+      index.html
+      style.css
+   backend/
+      server.js
+Folder banane ke liye:
+
+Repository mein jao.
+
+Add file → Create new file par click karo.
+
+Filename mein likho:
+
+frontend/index.html
+File ka content add karo.
+
+Commit changes karo.
+
+Ab frontend folder automatically ban jayega.
+
+Isi tarah:
+
+backend/server.js
+likhne se backend folder ban jayega.
+
+Method 3: Agar tumhe pura folder exactly upload karna hai
+Recommended Git Bash ya VS Code terminal se Git use karo.
+
+Apne project folder mein terminal open karke ye commands chalao:
+
+git init
+git add .
+git commit -m "Upload project"
+git branch -M main
+git remote add origin YOUR_REPOSITORY_URL
+git push -u origin main
+
+Isse tumhara complete folder structure, subfolders aur files ek saath upload ho jayenge. ZIP ki zaroorat nahi.
+
+Ek baat batao:
+Tum GitHub par upload kis tarah karna chahte ho?
+
+1. Upload kaise karna hai?
+
+
+GitHub website se directly
+
+VS Code se
+
+Git Bash / Terminal se
+2. Tumhare paas kya hai?
+
+
+Project folder computer mein hai, VS Code bhi hai
+
+Sirf normal folder hai computer mein
+
+Folder ZIP file mein hai
+Main tumhe bilkul step-by-step guide kar dunga, taaki poora folder aur uske andar ke subfolders same structure mein GitHub par upload ho jaayein.
+
+ok hogya ab live kese kru page?
+Great! 🎉 Ab tum apni website ko GitHub Pages ki help se free mein live kar sakte ho.
+
+Iske liye hosting ya domain kharidna zaroori nahi hai.
+
+Step 1: GitHub Pages enable karo
+Guides
+Deploying
+Deploying to GitHub Pages
+Apni GitHub repository open karo.
+
+Settings par click karo.
+
+Left side mein Pages par click karo.
+
+Build and deployment section mein:
+
+Source: Deploy from a branch
+
+Branch: main
+
+Folder: / (root)
+
+Save par click karo.
+
+Step 2: Live link milega
+Save karne ke baad 1–5 minutes wait karo.
+
+GitHub Pages section mein tumhe website ka link dikhega.
+
+Link kuch aisa hoga:
+
+https://YOUR-USERNAME.github.io/REPOSITORY-NAME/
+Us link ko open karo. Tumhari website live! 🚀
+
+Ek important baat
+Tumhari repository ke root folder mein index.html hona chahiye agar simple HTML website hai.
+
+Mujhe bas ye batao:
+
+Tumne kaunsi website upload ki hai?
+
+
+HTML, CSS, JavaScript
+
+React / Vite
+
+Next.js
+
+Kuch aur
+Kyunki React/Vite aur normal HTML website ko live karne ka process thoda alag hota hai. Main tumhe sahi method bataunga.
+
+Meri website html mein bani hai. GitHub Pages par live karne ke exact steps batao.
+Perfect! HTML website ke liye GitHub Pages par live karna bahut easy hai. Follow karo:
+
+Step 1: index.html check karo
+Apni GitHub repository ke Code tab mein jao.
+
+Check karo ki files kuch is tarah hain:
+
+MyWebsite/
+│
+├── index.html
+├── style.css
+├── script.js
+└── images/
+    └── photo.png
+Important index.html publishing folder ke bilkul root mein honi chahiye, kisi extra subfolder ke andar nahi. 
+
+GitHub Docs
+
+Step 2: GitHub Pages enable karo
+
+Repository open karo.
+
+Settings par click karo.
+
+Left sidebar mein Pages open karo.
+
+Build and deployment mein ye settings select karo:
+
+Setting
+
+Select
+
+Source
+
+Deploy from a branch
+
+Branch
+
+main
+
+Folder
+
+/ (root)
+
+5. Save click karo.
+
+Step 3: Website live karo
+Ab 2–10 minutes wait karo.
+
+Phir Settings → Pages mein jao.
+
+Wahan Visit site button milega. Us par click karna hai.
+
+Tumhari website live ho jayegi! 
+
+GitHub
++1
+
+Step 4: Apna live link samjho
+Tumhara link kuch aisa hoga:
+
+https://username.github.io/repository-name/
+username ki jagah GitHub username aur repository-name ki jagah repository ka naam aayega.
+
+Official guide: GitHub Pages Documentation.
+
+Agar website live nahi hoti?
+Check karo index.html root mein hai.
+
+CSS aur JS file ke paths correct hain.
+
+Repository public hai (GitHub Free par public repository se Pages publish kar sakte ho).
+
+Actions tab mein deployment successful hai ya nahi check karo.
+
+Ab mujhe ek cheez batao:
+Tumhari index.html kahan hai?
+
+
+Direct repository ke andar (root)
+
+Ek folder ke andar, jaise mywebsite/index.html
+
+
+docs folder ke andar
+
+Mujhe nahi pata
+Pages enable kiya hai?
+
+
+Abhi nahi
+
+Haan, Save kar diya
+
+Koi error aa raha hai
+Main tumhari website live hone tak guide karunga. 🚀
+
+
+Pasted text.txt
+Document
+yeh hai but meri files aa ni rhei me dikahti hu phle 10 images ni aari baki sb ok hai jo mere tasks hai usme' but maien ako ss bheja hai dekho .post hai yeh jo ni aari
+Isha, maine tumhari index.html file check kar li hai. ❤️
+
+Mujhe problem ka ek important clue mil gaya hai.
+
+Tumhare HTML mein Static Graphics (Post) ke liye pehli 10 images ke paths ye hain:
+
+images/portfolio/post (1).jpg
+images/portfolio/post (2).jpg
+images/portfolio/post (3).jpg
+...
+images/portfolio/post (10).jpg
+Yaani HTML in images ko images/portfolio/ folder ke andar dhoondh raha hai.
+
+Mujhe lag raha hai problem image ke naam, extension ya folder path mein ho sakti hai. GitHub Pages par capital letters aur small letters bhi matter karte hain.
+
+Abhi ye 3 cheezein check karo:
+GitHub repository mein images folder open karo.
+
+Uske andar portfolio folder open karo.
+
+Dekho kya wahan ye 10 files hain:
+
+post (1).jpg
+post (2).jpg
+post (3).jpg
+post (4).jpg
+post (5).jpg
+post (6).jpg
+post (7).jpg
+post (8).jpg
+post (9).jpg
+post (10).jpg
+Mujhe ab ye screenshot bhejo:
+GitHub → images → portfolio
+
+Is folder ke andar jo files dikh rahi hain, unka screenshot bhejo.
+Ek aur baat: tumhare current message mein mujhe HTML file mili hai, screenshot nahi.
+
+Main tumhare actual filenames aur HTML paths match karke bata dunga ki kya change karna hai. Baaki website ka design ya code change nahi karenge. Sirf missing 10 posts ki images fix karenge. 😊
+
+User attachment
+yeh hai dekho
+Haan Isha, ab screenshot dekh liya! ❤️
+
+Problem clear hai:
+
+Pehli 10 Static Graphics images load nahi ho rahi hain.
+
+Stories, Reels, Carousels aur Festive images load ho rahi hain.
+
+Iska matlab website aur GitHub Pages ka main setup sahi chal raha hai.
+
+Problem sirf Post images ke file paths ya filenames mein lag rahi hai.
+
+Tumhare HTML mein ye path likha hai:
+
+<img src="images/portfolio/post (1).jpg">
+
+GitHub Pages mein capital aur small letters alag maane jaate hain.
+
+For example:
+
+post (1).jpg ≠ Post (1).jpg
+
+post (1).jpg ≠ post (1).JPG
+
+post (1).jpg ≠ post (1).png
+
+Ab mujhe ek screenshot bhejo
+GitHub repository mein:
+
+images → portfolio
+
+Is folder ko open karke uski file listing ka screenshot bhejo, jisme pehli 10 Post images ke naam dikh rahe hon.
+
+Typical Codebase Structure - Coders for Causes Workshops
+Abhi HTML mein koi change mat karna.
+
+Main tumhare actual filenames check karke exact bataunga ki HTML mein kya replace karna hai ya images ko rename karna hai. Baaki working website ko bilkul touch nahi karenge. 😊
+
+html kya mang rha hai yeh btao me check krti hu usme kes ehai
+Tumhari HTML file mein pehli 10 Post images ke liye ye exact filenames maange ja rahe hain:
+
+Folder path: images/portfolio/
+
+No.
+
+HTML mein required filename
+
+1
+
+post (1).jpg
+
+2
+
+post (2).jpg
+
+3
+
+post (3).jpg
+
+4
+
+post (4).jpg
+
+5
+
+post (5).jpg
+
+6
+
+post (6).jpg
+
+7
+
+post (7).jpg
+
+8
+
+post (8).jpg
+
+9
+
+post (9).jpg
+
+10
+
+post (10).jpg
+
+HTML mein example:
+
+<img src="images/portfolio/post (1).jpg">
+
+Ab tum apne computer mein images/portfolio folder open karke check karo:
+
+Kya filenames post (1).jpg se post (10).jpg tak hain?
+
+Kya extension .jpg hai ya .png / .jpeg?
+
+Kya post ka P capital hai?
+
+Mujhe wahan ke actual 10 filenames bata dena. Main tumhe exact correction de dunga. 😊
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +402,7 @@
 
   <meta
     name="description"
-    content="Isha Goyal is a creative graphic designer specializing in digital creatives, social media designs, marketing visuals, banners, Posters, branding assets and more."
+    content="Isha Goyal is a creative graphic designer specializing in digital creatives, social media designs, marketing visuals, banners, posters, branding assets and more."
   >
 
   <link rel="stylesheet" href="style.css">
@@ -342,73 +736,73 @@
     <div class="portfolio-grid">
 
 
-      <!-- ================= PostS ================= -->
+      <!-- ================= POSTS ================= -->
 
       <div class="work" data-category="Post">
-        <img src="images/portfolio/Post (1).jpg" alt="Static Graphic Design">
+        <img src="images/portfolio/post (1).jpg" alt="Static Graphic Design">
         <div class="overlay">
           <span>Static Graphics</span>
         </div>
       </div>
 
       <div class="work" data-category="Post">
-        <img src="images/portfolio/Post (2).jpg" alt="Static Graphic Design">
+        <img src="images/portfolio/post (2).jpg" alt="Static Graphic Design">
         <div class="overlay">
           <span>Static Graphics</span>
         </div>
       </div>
 
       <div class="work" data-category="Post">
-        <img src="images/portfolio/Post (3).jpg" alt="Static Graphic Design">
+        <img src="images/portfolio/post (3).jpg" alt="Static Graphic Design">
         <div class="overlay">
           <span>Static Graphics</span>
         </div>
       </div>
 
       <div class="work" data-category="Post">
-        <img src="images/portfolio/Post (4).jpg" alt="Static Graphic Design">
+        <img src="images/portfolio/post (4).jpg" alt="Static Graphic Design">
         <div class="overlay">
           <span>Static Graphics</span>
         </div>
       </div>
 
       <div class="work" data-category="Post">
-        <img src="images/portfolio/Post (5).jpg" alt="Static Graphic Design">
+        <img src="images/portfolio/post (5).jpg" alt="Static Graphic Design">
         <div class="overlay">
           <span>Static Graphics</span>
         </div>
       </div>
 
       <div class="work" data-category="Post">
-        <img src="images/portfolio/Post (6).jpg" alt="Static Graphic Design">
+        <img src="images/portfolio/post (6).jpg" alt="Static Graphic Design">
         <div class="overlay">
           <span>Static Graphics</span>
         </div>
       </div>
 
       <div class="work" data-category="Post">
-        <img src="images/portfolio/Post (7).jpg" alt="Static Graphic Design">
+        <img src="images/portfolio/post (7).jpg" alt="Static Graphic Design">
         <div class="overlay">
           <span>Static Graphics</span>
         </div>
       </div>
 
       <div class="work" data-category="Post">
-        <img src="images/portfolio/Post (8).jpg" alt="Static Graphic Design">
+        <img src="images/portfolio/post (8).jpg" alt="Static Graphic Design">
         <div class="overlay">
           <span>Static Graphics</span>
         </div>
       </div>
 
       <div class="work" data-category="Post">
-        <img src="images/portfolio/Post (9).jpg" alt="Static Graphic Design">
+        <img src="images/portfolio/post (9).jpg" alt="Static Graphic Design">
         <div class="overlay">
           <span>Static Graphics</span>
         </div>
       </div>
 
       <div class="work" data-category="Post">
-        <img src="images/portfolio/Post (10).jpg" alt="Static Graphic Design">
+        <img src="images/portfolio/post (10).jpg" alt="Static Graphic Design">
         <div class="overlay">
           <span>Static Graphics</span>
         </div>
@@ -765,8 +1159,8 @@
           <p>
             Creating visual designs for social media, websites,
             digital campaigns and marketing requirements. Working
-            across different creative formats including Posts,
-            banners, Posters, promotional graphics and other
+            across different creative formats including posts,
+            banners, posters, promotional graphics and other
             brand-aligned visual assets.
           </p>
 
